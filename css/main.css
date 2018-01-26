@@ -43,3 +43,29 @@ header img {
 footer {
     font-size: 0.5rem;
 }
+
+/* CREDITS GO TO Kashif Latif on reply on site https://stackoverflow.com/questions/15128716/html-5-marquee-tag-error-in-w3c-validation - Make it a marquee */
+.marquee {
+    width: 450px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    text-indent: 0;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee span:hover {
+    animation-play-state: paused
+}
+
+/* Make it move */
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
