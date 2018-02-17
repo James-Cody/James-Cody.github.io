@@ -1,0 +1,17 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header, nav, main, footer {
+       
+    }
+    
+    article p.town-article img {width: 29.333%;}
+
+    article p.town-article {}
+
+    article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        width: 29.333%;
+        float: left;
+        border: 1em;
+    }
+
+}
