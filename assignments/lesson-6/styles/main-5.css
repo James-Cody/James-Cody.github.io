@@ -18,7 +18,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 header {color: #ff8000}
 header h1 {}
 header img {width: 10%; float: left; max-height: 56px; max-width: 72px; min-height: 30px; min-width: 39px;margin: 2%;}
-header .subheading {color: yellow}
+header .subheading {color: yellow; margin: 2%;}
 
 
 /*----------- NAVIGATION --------------*/
