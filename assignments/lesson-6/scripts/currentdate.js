@@ -3,6 +3,7 @@ function date() {
     var y = d.getFullYear();
     var m = d.getMonth();
     var day = d.getDate();
+    var weekday = d.getDay();
     if(m == 0) {m = "January";}
     if(m == 1) {m = "February";}
     if(m == 2) {m = "March";}
@@ -15,5 +16,12 @@ function date() {
     if(m == 9) {m = "October";}
     if(m == 10) {m = "November";}
     if(m == 11) {m = "Decenber";}
-    document.getElementById('currentdate').innerHTML = m + " " + day + " "+ y;
+    if(weekday == 1) {weekday = "Monday";}
+    if(weekday == 2) {weekday = "Tuesday";}
+    if(weekday == 3) {weekday = "Wednesday";}
+    if(weekday == 4) {weekday = "Thursday";}
+    if(weekday == 5) {weekday = "Friday";}
+    if(weekday == 6) {weekday = "Saturday";}
+    if(weekday == 7) {weekday = "Sunday";}
+    document.getElementById('currentdate').innerHTML = weekday + ", " + day + " " + m + " " + y;
 }
