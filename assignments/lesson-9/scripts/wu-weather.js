@@ -1,6 +1,6 @@
 var header = document.querySelector('header');
 var section = document.querySelector('section');
-var requestURL = 'http://api.wunderground.com/api/bd9e84fca0dc43f7/conditions/q/MN/Franklin.json';
+var requestURL = 'https://api.wunderground.com/api/bd9e84fca0dc43f7/conditions/q/MN/Franklin.json';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
