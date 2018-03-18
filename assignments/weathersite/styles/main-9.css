@@ -68,11 +68,14 @@ nav ul li a:hover {
     background: -moz-linear-gradient(top, #fdffc0 0%, #ffff00 100%);
     color: #333;
 }
+
+nav ul li.active {background: linear-gradient(to bottom, #ffbe6b 0%,#ff8000 100%);}
+
 nav ul li.active a {
     color: #fff;
 }
 
-nav ul li.active a:hover {background: linear-gradient(to bottom, #ffcf91 0%,#ff9400 100%);}
+nav ul li.active a:hover {background: linear-gradient(to bottom, #ffbe6b 0%,#ff8000 100%);}
 
 nav ul.hide {display: none;}
 
