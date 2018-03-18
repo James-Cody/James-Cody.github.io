@@ -1,0 +1,124 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    background-color:#bbe2f2;
+    
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {color: #ff8000}
+header h1 {}
+header img {width: 10%; float: left; max-height: 56px; max-width: 72px; min-height: 30px; min-width: 39px;margin: 2%;}
+header .subheading {color: #ffeb00; margin: 2%; font-weight: 600}
+
+
+/*----------- NAVIGATION --------------*/
+
+nav {
+    margin: 2%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcf91+0,ff9400+100 */
+    background: #ffcf91; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffcf91 0%, #ff9400 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffcf91 0%,#ff9400 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffcf91 0%,#ff9400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf91', endColorstr='#ff9400',GradientType=0 ); /* IE6-9 */
+    max-width: 8.5rem
+}
+
+nav button{
+    padding: .5em 3.5rem;
+    margin: .35rem;
+    background-color: transparent;
+    border:none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0rem;
+}
+nav ul li {
+    width: 70%;
+    margin: 1em;
+}
+nav ul li a {
+    display:block;
+    color: darkblue;
+    border-left: none;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background: yellow;
+    background: linear-gradient(to bottom, #fdffc0 0%,#ffff00 100%);
+    background: -webkit-linear-gradient(top, #fdffc0 0%,#ffff00 100%);
+    background: -moz-linear-gradient(top, #fdffc0 0%, #ffff00 100%);
+    color: #333;
+}
+
+nav ul li.active {background: linear-gradient(to bottom, #ffbe6b 0%,#ff8000 100%);}
+
+nav ul li.active a {
+    color: #fff;
+}
+
+nav ul li.active a:hover {background: linear-gradient(to bottom, #ffbe6b 0%,#ff8000 100%);}
+
+nav ul.hide {display: none;}
+
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+main div.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+    /* i dont want border between pic and words, spacing with a blank row works well*/
+}
+
+img{max-width: 100%;}
+
+main section div.current { width:50%; margin: 0 0 0 0%;}
+main section div picture img {width: 50px;}
+
+section {}
+section div.highlow{margin: 0%;}
+section.forecast{display:none;}
+
+article div div img{  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%; /* fill the page in the small/phone view */
+  border: 1em;
+}
+
+footer {
+    text-align: center;
+    background-color: #555;
+    padding: 0 2%;
+    margin: 2%;
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

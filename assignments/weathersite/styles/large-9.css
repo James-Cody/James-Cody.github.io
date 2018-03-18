@@ -1,0 +1,24 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header, nav, main, footer {
+       max-width: 1600px;
+    }
+    
+    main div
+    {    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    main section.story{grid-column: 1;}
+    main section div.pic{grid-column: 2;}
+    
+    main img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        width: 200%;
+        border: 1em;
+        margin-left: 1em;
+    }
+    
+
+
+}

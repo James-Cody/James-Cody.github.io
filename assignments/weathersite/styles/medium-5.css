@@ -1,0 +1,51 @@
+@media only screen and (min-width: 37.5em) {
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    nav{    
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffcf91+0,ff9400+100 */
+        background: #ffcf91; /* Old browsers */
+        background: -moz-linear-gradient(top, #ffcf91 0%, #ff9400 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #ffcf91 0%,#ff9400 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #ffcf91 0%,#ff9400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcf91', endColorstr='#ff9400',GradientType=0 ); /* IE6-9 */
+        max-width: 100%
+            
+    }
+    
+    nav ul li{float: left; margin: 0; width: 16.66%;}
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+    
+    
+    nav ul.hide {display: block;}
+    
+    header, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+        /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    }
+
+    
+    section div.highlow{margin: 0%;}
+    section div.current{margin: 0%;}
+    section div.current img{margin: 0%;}
+    section div.conditions{margin: 0%;}
+    
+    
+    section.forecast { 
+        display: grid; /* show the 10-day forecast with the medium view and up */
+        }  
+
+    article div div img { width: 62.666%;}  /* responsive images */
+    
+        article .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main div.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    /* i dont want border between pic and words, spacing with a blank row works well*/
+    
+}
+
+}

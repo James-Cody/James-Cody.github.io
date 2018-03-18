@@ -1,0 +1,30 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header, nav, main, footer {
+       max-width: 1600px;
+    }
+    
+    article p.town-article {}
+
+    article div div img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        width: 100%;
+        border: 1em;
+    }
+    article .container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    main div.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    /* i dont want border between pic and words, spacing with a blank row works well*/
+    
+}
+    
+    main div.grid div:hover{box-shadow: 5px 5px 10px #6d8088;}
+    .rocorn {border-radius: 5px 50px;}
+    .opac {opacity: .5;}
+
+}

@@ -63,8 +63,9 @@ nav ul li a:hover {
     background: -moz-linear-gradient(top, #fdffc0 0%, #ffff00 100%);
     color: #333;
 }
+
 nav ul li.active a {
-    color: #fff;
+    color: #ffffff;
 }
 
 nav ul li.active a:hover {background: linear-gradient(to bottom, #ffcf91 0%,#ff9400 100%);}
@@ -85,8 +86,6 @@ main div.grid{
     grid-gap: 2em;
     /* i dont want border between pic and words, spacing with a blank row works well*/
 }
-
-
 
 footer {
     text-align: center;

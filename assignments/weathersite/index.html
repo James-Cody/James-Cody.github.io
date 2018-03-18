@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Atlantic Today | Home</title>
+  <meta name="author" content="Cody James">
+  <meta name="description" content="Weather in major cities">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300" rel="stylesheet" type="text/css">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-9.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-9.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-9.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="clearfix">
+    <img src="images/Weather-Site-Logo.png" alt="The site logo">
+    <h1>The Atlantic Today</h1>
+    <div class="subheading">Your Weather needs are met here!</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav class="clearfix">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+      <ul id="NavList" class="hide">
+       <nav class="container">
+    	<div><li class="active"><a href="#">Home</a></li></div>
+    	<div><li><a href="https://james-cody.github.io/assignments/lesson-9/franklin-9.html">Franklin</a></li></div>
+    	<div><li><a href="https://james-cody.github.io/assignments/lesson-9/Greenville.html">Greenville</a></li></div>
+    	<div><li><a href="https://james-cody.github.io/assignments/lesson-9/Springfield.html">Springfield</a></li></div>
+    	<div><li><a href="https://james-cody.github.io/assignments/lesson-9/StormCenter.html">Storm Center</a></li></div>
+        <div><li><a href="https://james-cody.github.io/assignments/lesson-9/gallery/gallery-7.html">Gallery</a></li></div>
+       </nav>
+      </ul>		
+  </nav>
+    
+  <main>
+      <div>
+    <h2>Weather Story</h2>
+    <section class="story">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a velit a mauris elementum tristique. Integer vel tempor turpis, ac aliquam quam. Duis tempor mauris eu nibh fringilla, et imperdiet odio semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis, velit sit amet congue auctor, enim nunc vestibulum dolor, nec pulvinar tortor odio non augue. Proin diam nulla, lobortis id posuere pellentesque, dignissim vel lacus. Aenean libero velit, accumsan in tincidunt fermentum, pretium quis odio. Vivamus iaculis tempor posuere. Nunc ligula neque, blandit congue arcu ac, mollis lobortis ante. Morbi sagittis lorem congue ex lobortis blandit. Donec vehicula, odio eget mollis ullamcorper, felis lectus ornare ex, quis pharetra metus lectus quis orci. Praesent ipsum leo, congue non magna vitae, volutpat ullamcorper nunc. Mauris in orci tincidunt, rhoncus sem ac, ornare nulla.
+
+        Donec eleifend urna sed turpis scelerisque, ac pretium odio vestibulum. Sed faucibus mollis semper. Mauris vulputate leo non ligula dignissim, nec varius ante ullamcorper. Suspendisse id varius ex. Quisque vehicula eu odio vitae sollicitudin. Suspendisse cursus arcu in odio hendrerit, et tempus lacus dictum. Donec porta, risus in posuere hendrerit, odio lorem sodales elit, at tincidunt dolor urna id urna.
+
+        Fusce tellus sapien, luctus accumsan sem eget, aliquam dictum nulla. Donec pellentesque lectus a nunc interdum euismod. Pellentesque lobortis lacinia orci in scelerisque. Etiam tristique eu felis eu fermentum. Mauris non leo vitae magna eleifend scelerisque. Quisque nec purus in ante volutpat accumsan. Pellentesque rutrum placerat varius. Aenean non purus eu mi placerat pretium.
+    </section>
+        
+    <section class="clearfix">
+        <div class="pic">
+            <picture>
+            <img src="images/franklin-original-med.jpg" alt="sunset" srcset="images/franklin-original.jpeg 1000w, images/franklin-original-med.jpg 700w, images/franklin-original-low.jpg 340w" sizes="(min-width: 1200px) 740px, (min-width: 768px) 700px, calc(100vw - 36px)">
+            </picture>
+          </div>
+    </section>	  
+  </div>
+  <container>
+    <script src="scripts/json.js"></script>
+  </container>
+  </main>
+    
+  <footer>
+    <aside>
+      TheAtlanticToday@TAC.com
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | The Atlantic Today | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script> date(); </script>
+
+</body>
+</html>
