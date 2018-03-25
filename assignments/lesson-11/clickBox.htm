@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Click Box</title>
+	<link rel="stylesheet" href="css/clickbox.css">
+	<!--<script src="js/jquery-3.3.1.min.js"></script>!-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script>
+	$(function(){
+		$('.boxHolder').on({
+			click: function(evt){
+				// The Click Handler
+				$(this).addClass('greenBox').html($(this).index());
+			},
+			dblclick: function(){
+				// The Double-Click Handler
+				$(this).addClass('orangeBox');
+			},
+			mouseenter: function(evt){
+				// The MouseEnter Handler
+				$(this).css('opacity',0.3);
+			},
+			mouseleave: function(evt){
+				// The MouseLeave Handler
+				$(this).css('opacity',1.0);
+			}
+		}, "li");
+	})
+	</script>
+</head>
+<body>
+	<ul class="boxHolder">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>
