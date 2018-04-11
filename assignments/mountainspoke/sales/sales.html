@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke | Sales</title>
+  <meta name="author" content="Cody James">
+  <meta name="description" content="Bicycle Retail Store">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300" rel="stylesheet" type="text/css">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script> 
+  $( function() { //couldnt figure out how to get this external
+    $( "#accordion" ).accordion({
+      collapsible: true
+    });
+  } );
+  </script>
+</head>
+<body>
+
+  <header>
+      <div class="container">
+        <img src="images/logo.jpg" alt="Site logo">
+      </div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+      <ul id="NavList">
+       <nav class="container">
+    	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/index.html">Home</a></li></div>
+    	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/tours/tours.html">Tours</a></li></div>
+    	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/events/events.html">Events</a></li></div>
+    	<div><li class="active"><a href="#">Sales</a></li></div>
+    	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/service/service.html">Service</a></li></div>
+        <div><li><a href="https://james-cody.github.io/assignments/mountainspoke/contact/contact.html">Contact</a></li></div>
+       </nav>
+      </ul>		
+  </nav>
+    
+<main>
+    <div class="grid" id="accordion">
+        <div class="title"><h2>Yeti</h2></div>
+      
+        <div class="yeti">
+
+            <div>
+                <img src="images/2019_YetiCycles_SB100_Black-desktop@2x.jpg">
+                <H3>SB100</H3>
+                <h3>TRAVEL: 3.9" (100MM)</h3>
+                <h3>WHEEL SIZE: 29"</h3>
+                <h3>CATEGORY: TRAIL / X-COUNTRY</h3>
+            </div>
+
+            <div>
+                <img src="images/2018_YetiCycles_SB6_TR_Turquoise-desktop@2x.jpg">
+                <H3>SB6 TR</H3>
+                <h3>TRAVEL: 6.0" (152MM)</h3>
+                <h3>WHEEL SIZE: 27.5"</h3>
+                <h3>CATEGORY: ENDURO</h3>
+            </div>
+            
+            <div>
+                <img src="images/2018_YetiCycles_SB5_PLUS_Black-desktop@2x.jpg">
+                <H3>SB5+</H3>
+                <h3>TRAVEL: 5.0” (127MM)</h3>
+                <h3>WHEEL SIZE: 27.5” +</h3>
+                <h3>CATEGORY: TRAIL</h3>
+            </div>
+            
+        </div>
+        
+        <div class="title"><h2>Kona</h2></div>
+      
+        <div class="kona">
+
+            <div>
+                <img src="images/process_153_cr_dl_275.jpg">
+                <H3>PROCESS 153 CR/DL</H3>
+                <h3>TRAVEL: 6.0" (153MM)</h3>
+                <h3>WHEEL SIZE: 27.5"</h3>
+                <h3>CATEGORY: ENDURO</h3>
+            </div>
+
+            <div>
+                <img src="images/honzo_cr_trail_dl.jpg">
+                <H3>HONZO CR TRAIL DL</H3>
+                <h3>TRAVEL: N/A</h3>
+                <h3>WHEEL SIZE: 29"</h3>
+                <h3>CATEGORY: TRAIL</h3>
+            </div>
+            
+            <div>
+                <img src="images/hei_hei_trail_cr_dl_275.jpg">
+                <H3>HEI HEI TRAIL CR/DL</H3>
+                <h3>TRAVEL: 5.5” (140MM)</h3>
+                <h3>WHEEL SIZE: 27.5” +</h3>
+                <h3>CATEGORY: TRAIL</h3>
+            </div>
+            
+        </div>
+        
+        
+        <div class="title"><h2>Trek</h2></div>
+      
+        <div class="trek">
+
+            <div>
+                <img src="images/2139600_2018_A_1_TOP_FUEL_9_9_RSL.jpg">
+                <H3>TOP FUEL 9.9 RACE SHOP LIMITED</H3>
+                <h3>TRAVEL: 3.9" (100MM)</h3>
+                <h3>WHEEL SIZE: 29"</h3>
+                <h3>CATEGORY: PRO MOUNTAIN</h3>
+            </div>
+
+            <div>
+                <img src="images/1185600_2018_A_1_Remedy_7_275.jpg">
+                <H3>HONZO CR TRAIL DL</H3>
+                <h3>TRAVEL: 6.2" (160MM)</h3>
+                <h3>WHEEL SIZE: 27.5"</h3>
+                <h3>CATEGORY: TRAIL</h3>
+            </div>
+            
+        </div>
+        
+    </div>
+</main>
+
+<footer>
+    <aside>
+      support@MountainSpoke.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
+</footer>
+
+<script src="scripts/currentdate.js"></script>
+<script> date(); </script>
+    
+
+</body>
+</html>

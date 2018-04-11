@@ -66,34 +66,46 @@ main .grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 20px;
     width: 96%;
     margin: 2%;
+    grid-gap: 20px;
 }
 
 .grid div{
     padding: 0%;
 }
 
-main div.grid div:hover{box-shadow: 5px 5px 10px #6d8088;}
-.rocorn {border-radius: 5px 50px;}
-.opac {opacity: .5;}
+.grid div div img{width: 100%; margin: 0px; border: 0px; padding: 0px; border-style: none; max-width: 454px;}
 
-.grid div img{width: 100%; margin: 0px; border: 0px; padding: 0px; border-style: none;}
-
-.text{
+.title h2{
     align-self: center;
     background-color: #6c6c6c;
 }
 
+.title h2:hover {
+    background-color: #4ebdc6;
+}
 
-.text div:hover{box-shadow: 0px 0px 0px #6c6c6c;}
+.yeti, .kona, .trek{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /*-webkit-overflow-scrolling: touch; /* This is for IOS and will give "unsupported CSS" errors in other browsers so i decided not to include it as i have been marked down for this in the past*/
+
+}
+
+.yeti div, .kona div, .trek div{
+    display: inline-block;
+}
+
+
+.yeti div div:hover{box-shadow: 0px 0px 0px #6c6c6c;}
 .rocorn {border-radius: 0px 0px;}
 .opac {opacity: 1;}
 
-.text h1{font-size: 80%; font-style: italic; text-align: center; color: #d6d6d6;}
+.title h1{font-size: 80%; font-style: italic; text-align: center; color: #d6d6d6;}
 
-.text h2{font-size: 250%; font-weight: 600; text-align: center;  color: #d6d6d6;}
+.title h2{font-size: 250%; font-weight: 600; text-align: center;  color: #d6d6d6;}
 
 .invite{font-size: 150%; text-align: center; color: #313131;align-self: center; background-color: #e2e2e2}
 
