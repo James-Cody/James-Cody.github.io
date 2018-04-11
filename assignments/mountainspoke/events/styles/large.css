@@ -32,6 +32,12 @@
     grid-gap: 25px;
     }
     
-    .grid .Title{grid-column: span 2}
+    .register, .details{grid-column: span 2;}
+    
+    main .form{grid-template-columns: 1fr 1fr 1fr;}
+
+    main .form .comments, .form .button{grid-column: span 3;}
+    
+    main .form .comments{text-align: center;}
     
 }

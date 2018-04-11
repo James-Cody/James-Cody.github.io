@@ -82,16 +82,41 @@ main div.grid div:hover{box-shadow: 5px 5px 10px #6d8088;}
 
 .grid div img{width: 100%; margin: 0px; border: 0px; padding: 0px; border-style: none;}
 
-.Title{
+.Title, .register{
     text-align: center;
     align-self: center;
     background-color: #6c6c6c;
 }
 
 
-.Title h1{font-size: 80%; font-style: italic; text-align: center; color: #d6d6d6;}
+.register h1{font-size: 150%; font-style: italic; text-align: center; color: #d6d6d6;}
 
 .Title h2{font-size: 250%; font-weight: 600; text-align: center;  color: #d6d6d6;}
+
+/*----------- FORM --------------*/
+
+
+main .form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+    width: 96%;
+    margin: 2%;
+    text-align: left;
+}
+
+main .form .comments{
+    resize: vertical;
+    min-height: 200px;
+    width: 100%;
+    min-width: 280px;
+}
+
+main .form .button{text-align: center;}
+
+.divphone, .divdob{color: red;}
+
 
 
 footer {

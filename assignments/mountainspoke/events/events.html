@@ -28,9 +28,9 @@
     	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/index.html">Home</a></li></div>
     	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/tours/tours.html">Tours</a></li></div>
     	<div><li class="active"><a href="#">Events</a></li></div>
-    	<div><li><a href="#">Sales</a></li></div>
-    	<div><li><a href="#">Service</a></li></div>
-        <div><li><a href="#">Contact</a></li></div>
+    	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/sales/sales.html">Sales</a></li></div>
+    	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/service/service.html">Service</a></li></div>
+        <div><li><a href="https://james-cody.github.io/assignments/mountainspoke/contact/contact.html">Contact</a></li></div>
        </nav>
       </ul>		
   </nav>
@@ -44,17 +44,26 @@
         
         <div><img src="images/images.jpg"></div>
         
-        <div><h3>Details</h3>
-             <h4>From 4/13/18 To 4/15/18 | 
-                 The...</h4>
+        <div class="details"><h3>Details</h3>
+             <h4>From 4/13/18 To 4/15/18 | Silverthorne, CO to Platoro, CO (316.5 miles) | As there will be shuttles at the checkpoints each night, gear will be light - Food and water for each day; Sealant-filled or thorn-resistant tubes is required | Cost: $350</h4>
         </div>
         
-
+        <div class="register"><h1>Register Here</h1></div>
+        <div class="spacer"></div>
         
     </div>
     
     <div class="form">
-    
+        <div>First Name: <input type="text" id="fname"></div>
+        <div>Last Name: <input type="text" id="lname"></div>
+        <div>Email: <input type="text" id="email"></div>
+        <div>Phone: <input type="text" id="phone"><div class="divphone" id="divphone"></div></div>
+        <div>Date of Birth: <input type="text" id="dob"><div class="divdob" id="divdob"></div></div>
+        <div>State: <input type="text" id="state"></div>
+        <div>Country: <input type="text" id="country"></div>
+        <div class="comments">Special accommodations/comments: <br><textarea type="text" id="comments" class="comments"></textarea></div>
+        <div class="button"><button onclick="clearBoxes()">Submit</button></div>
+        <div class="spacer"></div>
     
     </div>
 </main>
@@ -67,6 +76,7 @@
 </footer>
 
 <script src="scripts/currentdate.js"></script>
+<script src="scripts/formdata.js"></script>
 <script> date(); </script>
     
 

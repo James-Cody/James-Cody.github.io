@@ -34,5 +34,12 @@
     
     .daily, .season{align-self:auto; grid-column: span 2;}
 
+    
+    main .form{grid-template-columns: 1fr 1fr;}
+
+.form .comments, .form .button{grid-column: span 2;}
+
+main .form .button{text-align: center;}
+
 
 }
