@@ -1,0 +1,37 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    header, nav, main, footer {
+       max-width: 1600px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 2%;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+
+    nav li {
+        float: left;
+        width: 16.65%;
+    }
+
+    nav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px 4px;
+        text-decoration: none;
+    }
+    
+    main .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 25px;
+    }
+    
+    .grid .Title{grid-column: span 2}
+    
+}

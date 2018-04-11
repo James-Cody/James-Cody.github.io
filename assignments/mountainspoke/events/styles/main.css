@@ -1,0 +1,113 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', arial, sans-serif;
+    font-weight: 300;
+    background-color:#ebebeb;
+    
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header div{
+    margin: 2%;
+    width: 96%;
+    }
+
+header img {width: 100%;}
+
+
+/*----------- NAVIGATION --------------*/
+
+
+nav ul {
+    list-style-type: none;
+    margin: 2%;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    margin: 0;
+    padding: 0px;
+    float: left;
+    width: 16.66%;
+}
+
+nav li a {
+    margin: 0;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #111;
+}
+
+nav .active {
+    background-color: #4ebdc6;
+}
+
+main .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+    width: 96%;
+    margin: 2%;
+}
+
+.grid div{
+    padding: 0%;
+    text-align: center;
+}
+
+main div.grid div:hover{box-shadow: 5px 5px 10px #6d8088;}
+.rocorn {border-radius: 5px 50px;}
+.opac {opacity: .5;}
+
+.grid div img{width: 100%; margin: 0px; border: 0px; padding: 0px; border-style: none;}
+
+.Title{
+    text-align: center;
+    align-self: center;
+    background-color: #6c6c6c;
+}
+
+
+.Title h1{font-size: 80%; font-style: italic; text-align: center; color: #d6d6d6;}
+
+.Title h2{font-size: 250%; font-weight: 600; text-align: center;  color: #d6d6d6;}
+
+
+footer {
+    text-align: center;
+    background-color: #555;
+    color: #4ebdc6;
+    padding: 0 2%;
+    margin: 2%;
+}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
