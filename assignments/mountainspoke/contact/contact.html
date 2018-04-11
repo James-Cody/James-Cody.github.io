@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Mountain Spoke | Events</title>
+  <title>The Mountain Spoke | Contact</title>
   <meta name="author" content="Cody James">
   <meta name="description" content="Bicycle Retail Store">
   <!-- external style references in the proper cascading order -->    
@@ -12,6 +12,7 @@
   <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
   <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
   <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </head>
 <body>
 
@@ -27,10 +28,10 @@
        <nav class="container">
     	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/index.html">Home</a></li></div>
     	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/tours/tours.html">Tours</a></li></div>
-    	<div><li class="active"><a href="#">Events</a></li></div>
+    	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/events/events.html">Events</a></li></div>
     	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/sales/sales.html">Sales</a></li></div>
     	<div><li><a href="https://james-cody.github.io/assignments/mountainspoke/service/service.html">Service</a></li></div>
-        <div><li><a href="https://james-cody.github.io/assignments/mountainspoke/contact/contact.html">Contact</a></li></div>
+    	<div><li class="active"><a href="#">Contact</a></li></div>
        </nav>
       </ul>		
   </nav>
@@ -38,18 +39,17 @@
 <main>
     <div class="grid">
         
-        <div class="Title">
-            <h2>Cycle the Continental Divide</h2>
+        <div class="title">
+            <h2>Contact Us</h2>
         </div>
         
-        <div><img src="images/images.jpg"></div>
-        
-        <div class="details"><h3>Details</h3>
-             <h4>From 4/13/18 To 4/15/18 | Silverthorne, CO to Platoro, CO (316.5 miles) | As there will be shuttles at the checkpoints each night, gear will be light - Food and water for each day; Sealant-filled or thorn-resistant tubes is required | Cost: $350</h4>
+        <div class="contact">
+            <h3>Phone: 1-800-777-5555</h3>
+            <h3>Email: support@MountainSpoke.com</h3>
+            <h3>Address: 3950 Valley Commons Drive Bozeman, MT</h3>
         </div>
         
-        <div class="register"><h1>Register Here</h1></div>
-        <div class="spacer"></div>
+        <div id="map" class="map">MAP</div>
         
     </div>
     
@@ -58,10 +58,7 @@
         <div>Last Name: <input type="text" id="lname"><div class="divlname" id="divlname"></div></div>
         <div>Email: <input type="text" id="email"><div class="divemail" id="divemail"></div></div>
         <div>Phone: <input type="text" id="phone"><div class="divphone" id="divphone"></div></div>
-        <div>Date of Birth: <input type="text" id="dob"><div class="divdob" id="divdob"></div></div>
-        <div>State: <input type="text" id="state"><div class="divstate" id="divstate"></div></div>
-        <div>Country: <input type="text" id="country"><div class="divcountry" id="divcountry"></div></div>
-        <div class="comments">Special accommodations/comments: <br><textarea type="text" id="comments" class="comments"></textarea></div>
+        <div class="comments">Comments: <br><textarea type="text" id="comments" class="comments"></textarea></div>
         <div class="button"><button onclick="clearBoxes()">Submit</button></div>
         <div class="spacer"></div>
     
@@ -77,8 +74,9 @@
 
 <script src="scripts/currentdate.js"></script>
 <script src="scripts/formdata.js"></script>
+<script src="scripts/map.js"></script>
 <script> date(); </script>
-    
+<script> myMap(); </script>
 
 </body>
 </html>

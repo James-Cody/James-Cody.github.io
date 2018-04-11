@@ -82,16 +82,16 @@ main div.grid div:hover{box-shadow: 5px 5px 10px #6d8088;}
 
 .grid div img{width: 100%; margin: 0px; border: 0px; padding: 0px; border-style: none;}
 
-.Title, .register{
+.title{
     text-align: center;
     align-self: center;
     background-color: #6c6c6c;
 }
 
 
-.register h1{font-size: 150%; font-style: italic; text-align: center; color: #d6d6d6;}
+.title h2{font-size: 250%; font-weight: 600; text-align: center;  color: #d6d6d6;}
 
-.Title h2{font-size: 250%; font-weight: 600; text-align: center;  color: #d6d6d6;}
+.map{height: 60vw;}
 
 /*----------- FORM --------------*/
 
@@ -115,9 +115,7 @@ main .form .comments{
 
 main .form .button{text-align: center;}
 
-.divphone, .divdob, .divfname, .divlname, .divemail, .divstate, .divcountry{color: red;}
-
-
+.divphone, .divfname, .divlname, .divemail{color: red;}
 
 footer {
     text-align: center;
