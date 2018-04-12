@@ -28,11 +28,12 @@
     main .grid{
     display: grid;
     grid-template-columns: 200px 3fr;
-    grid-template-rows: 40% 60% 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 25px;
     }
     
-    .daily, .season{align-self:auto; grid-column: auto; grid-row: span 2}
-    .season{grid-row: span 3}
+    .title{align-self: center; height: 100%; text-align: center;}
+    
+    .title h2{text-align: center;}
     
 }
