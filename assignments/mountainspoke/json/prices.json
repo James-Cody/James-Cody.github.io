@@ -1,6 +1,7 @@
 {
+  "filler" : "yes",
   "parts" : [
-  {
+    {
         "name" : "SB100",
         "wheel" : 41,
         "gears" : 67,

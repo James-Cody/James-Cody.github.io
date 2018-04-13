@@ -10,8 +10,7 @@ request.onload = function(){
 }
 
 function populateParts(jsonObj) {
-    var bikeParts = [0];
-    bikeParts = jsonObj['parts'];
+    var bikeParts = jsonObj['parts'];
     var b = [0];
     var bw = [0];
     var bg = [0];
