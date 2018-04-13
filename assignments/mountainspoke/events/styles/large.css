@@ -38,6 +38,6 @@
 
     main .form .comments, .form .button{grid-column: span 3;}
     
-    main .form .comments{text-align: center;}
+    main .form{text-align: center;}
     
 }
