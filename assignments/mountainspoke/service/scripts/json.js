@@ -6,8 +6,8 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-  var parts = request.response;
-  populateParts(parts);
+  var p = request.response;
+  populateParts(p);
 }
 
 function populateParts(jsonObj) {
