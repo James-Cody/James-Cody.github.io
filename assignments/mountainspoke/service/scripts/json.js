@@ -1,4 +1,4 @@
-var requestURL = 'https://james-cody.github.io/assignments/mountainspoke/service/scripts/prices.json';
+var requestURL = 'https://james-cody.github.io/assignments/mountainspoke/data/prices.json';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
