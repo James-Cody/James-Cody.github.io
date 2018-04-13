@@ -1,4 +1,4 @@
-var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+var requestURL = 'https://james-cody.github.io/assignments/mountainspoke/json/prices.json';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
