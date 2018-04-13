@@ -1,0 +1,68 @@
+{
+  "parts" : [
+  {
+    "name": "SB100",
+    "wheel": 41,
+    "gears": 67,
+    "brakes": 52,
+    "pedal": 21,
+    "seat" : 26,
+  },
+  {
+    "name": "SB6 TR",
+    "wheel": 48,
+    "gears": 72,
+    "brakes": 56,
+    "pedal": 23,
+    "seat" : 22,
+  },
+  {
+    "name": "SB5+",
+    "wheel": 49,
+    "gears": 64,
+    "brakes": 64,
+    "pedal": 28,
+    "seat" : 27,
+  },
+  {
+    "name": "PROCESS 153 CR/DL",
+    "wheel": 52,
+    "gears": 80,
+    "brakes": 61,
+    "pedal": 20,
+    "seat" : 35,
+  },
+  {
+    "name": "HONZO CR TRAIL DL",
+    "wheel": 55,
+    "gears": 71,
+    "brakes": 49,
+    "pedal": 13,
+    "seat" : 26,
+  },
+  {
+    "name": "HEI HEI TRAIL CR/DL",
+    "wheel": 46,
+    "gears": 66,
+    "brakes": 57,
+    "pedal": 29,
+    "seat" : 40,
+  },
+  {
+    "name": "TOP FUEL 9.9 RACE SHOP LIMITED",
+    "wheel": 81,
+    "gears": 127,
+    "brakes": 102,
+    "pedal": 41,
+    "seat" : 46,
+  },
+  {
+    "name": "HONZO CR TRAIL DL",
+    "wheel": 71,
+    "gears": 110,
+    "brakes": 94,
+    "pedal": 36,
+    "seat" : 31,
+  },
+ ]
+}

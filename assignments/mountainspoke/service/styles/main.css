@@ -82,21 +82,21 @@ main div.grid div:hover{box-shadow: 5px 5px 10px #6d8088;}
 
 .grid div img{width: 100%; margin: 0px; border: 0px; padding: 0px; border-style: none;}
 
-.daily, .season{
+.title{
     text-align: center;
     align-self: center;
     background-color: #6c6c6c;
 }
 
 
-.daily h1, .season h1{font-size: 80%; font-style: italic; text-align: center; color: #d6d6d6;}
-
-.daily h2, .season h2{font-size: 250%; font-weight: 600; text-align: center;  color: #d6d6d6;}
+.title h2{font-size: 200%; font-style: italic; text-align: center;  color: #d6d6d6;}
 
 
 main table{
     width: 100%;
-    background-color: #6c6c6c;   
+    background-color: #6c6c6c;
+    color: #d6d6d6;
+    overflow: auto;
     border: 5px solid 4ebdc6;  
     border-spacing: 10px; 
 }

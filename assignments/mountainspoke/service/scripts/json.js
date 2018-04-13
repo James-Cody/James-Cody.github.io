@@ -1,6 +1,4 @@
-var header = document.querySelector('header');
-var section = document.querySelector('section');
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+var requestURL = 'https://james-cody.github.io/assignments/mountainspoke/service/scripts/prices.json';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
@@ -8,46 +6,47 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-  var cities = request.response;
-  populateCities(cities);
+  var p = request.response;
+  populateParts(p);
 }
 
-function populateCities(jsonObj) {
-  var towns = jsonObj['towns'];
+function populateParts(jsonObj) {
+  var parts = jsonObj['parts'];
       
-  for (var i = 0; i < towns.length; i++) {
-    var myArticle = document.createElement('article');
-    var myH2 = document.createElement('h2');
-    var myPara1 = document.createElement('p');
-    var myPara2 = document.createElement('p');
-    var myPara3 = document.createElement('p');
-    var myPara4 = document.createElement('p');
-    var myPara5 = document.createElement('p');
-    var myList = document.createElement('ul');
-
-    myH2.textContent = towns[i].name;
-    myPara1.textContent = 'Motto: ' + towns[i].motto;
-    myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-    myPara3.textContent = 'Current Population: ' + towns[i].currentPopulation;
-    myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
-    myPara5.textContent = 'Events: ';
+    
+    var b = [];
+    var bw = [];
+    var bg = [];
+    var bb = [];
+    var bp = [];
+    var bs = [];
+    var bplace = 0;
+    var bwplace = 0;
+    var bgplace = 0;
+    var bbplace = 0;
+    var bpplace = 0;
+    var bsplace = 0;
+    
+  for (var i = 0; i < parts.length; i++) {
+    b[i+1] = parts[i].name;
+    bplace = "b" + (i+1);
+    bw[i+1] = parts[i].wheel;
+    bwplace = "bw" + (i+1);
+    bg[i+1] = parts[i].gears;
+    bgplace = "bg" + (i+1);
+    bb[i+1] = parts[i].brakes;
+    bbplace = "bb" + (i+1);
+    bp[i+1] = parts[i].pedal;
+    bpplace = "bp" + (i+1);
+    bs[i+1] = parts[i].seat;
+    bsplace = "bs" + (i+1);
         
-    var events = towns[i].events;
-    for (var j = 0; j < events.length; j++) {
-      var listItem = document.createElement('li');
-      listItem.textContent = events[j];
-      myList.appendChild(listItem);
+    document.getElementById(bplace).innerHTML = b[i+1];
+    document.getElementById(bwplace).innerHTML = bw[i+1];
+    document.getElementById(bgplace).innerHTML = bg[i+1];
+    document.getElementById(bbplace).innerHTML = bb[i+1];
+    document.getElementById(bpplace).innerHTML = bp[i+1];
+    document.getElementById(bsplace).innerHTML = bs[i+1];
     }
-
-    myArticle.appendChild(myH2);
-    myArticle.appendChild(myPara1);
-    myArticle.appendChild(myPara2);
-    myArticle.appendChild(myPara3);
-    myArticle.appendChild(myPara4);
-    myArticle.appendChild(myPara5);
-    myArticle.appendChild(myList);
-
-    section.appendChild(myArticle);
-  }
         
 }
