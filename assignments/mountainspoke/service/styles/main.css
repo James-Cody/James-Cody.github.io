@@ -99,8 +99,11 @@ main table{
     background-color: #6c6c6c;
     color: #d6d6d6;
     overflow: auto;
-    border: 5px solid #4ebdc6;  
-    border-spacing: 10px; 
+    border-spacing: 1px; 
+}
+
+main table, th, td {
+   border: 1px solid black;
 }
 
 footer {

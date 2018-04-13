@@ -38,11 +38,10 @@ function populateParts(jsonObj) {
         bs[i+1] = bikeParts[i].seat;
         bsword = "bs" + [i+1];
         document.getElementById(bword).innerHTML = b[i+1];
-        document.getElementById(bwword).innerHTML = bw[i+1];
-        document.getElementById(bgword).innerHTML = bg[i+1];
-        document.getElementById(bbword).innerHTML = bb[i+1];
-        document.getElementById(bpword).innerHTML = bp[i+1];
-        document.getElementById(bsword).innerHTML = bs[i+1];
-        alert(i);
+        document.getElementById(bwword).innerHTML = "$" + bw[i+1];
+        document.getElementById(bgword).innerHTML = "$" + bg[i+1];
+        document.getElementById(bbword).innerHTML = "$" + bb[i+1];
+        document.getElementById(bpword).innerHTML = "$" + bp[i+1];
+        document.getElementById(bsword).innerHTML = "$" + bs[i+1];
     }        
 }
