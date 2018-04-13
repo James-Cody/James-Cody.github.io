@@ -17,7 +17,7 @@ request.onload = function(){
 */ 
 
 function populateParts(jsonObj) {
-    var bikeParts = jsonObj['members'];
+    var bikeParts = jsonObj['list'];
     var b = [0];
     var bw = [0];
     var bg = [0];
