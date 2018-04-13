@@ -17,7 +17,6 @@ function populateParts(jsonObj) {
     var bb = [];
     var bp = [];
     var bs = [];
-    
     for (var i = 0; i < bikeParts.length; i++) {
         b[i+1] = bikeParts[i].name;
         bw[i+1] = bikeParts[i].wheel;
@@ -25,12 +24,12 @@ function populateParts(jsonObj) {
         bb[i+1] = bikeParts[i].brakes;
         bp[i+1] = bikeParts[i].pedal;
         bs[i+1] = bikeParts[i].seat;
-        document.getElementById.toString("b{$i+1}").innerHTML = b[i+1];
-        document.getElementById.toString("bw{$i+1}").innerHTML = bw[i+1];
-        document.getElementById.toString("bg{$i+1}").innerHTML = bg[i+1];
-        document.getElementById.toString("bb{$i+1}").innerHTML = bb[i+1];
-        document.getElementById.toString("bp{$i+1}").innerHTML = bp[i+1];
-        document.getElementById.toString("bs{$i+1}").innerHTML = bs[i+1];
+        document.getElementById("b{$i+1}").innerHTML = b[i+1];
+        document.getElementById("bw{$i+1}").innerHTML = bw[i+1];
+        document.getElementById("bg{$i+1}").innerHTML = bg[i+1];
+        document.getElementById("bb{$i+1}").innerHTML = bb[i+1];
+        document.getElementById("bp{$i+1}").innerHTML = bp[i+1];
+        document.getElementById("bs{$i+1}").innerHTML = bs[i+1];
     }
         
 }
