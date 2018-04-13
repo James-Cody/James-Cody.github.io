@@ -5,12 +5,12 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function() {
-  var p = request.response;
-  populateParts(p);
+  var partArray = request.response;
+  populateParts(partArray);
 }
 
 function populateParts(jsonObj) {
-    var parts = jsonObj['parts'];
+    var bikeParts = jsonObj['parts'];
     var b = [];
     var bw = [];
     var bg = [];
@@ -18,13 +18,13 @@ function populateParts(jsonObj) {
     var bp = [];
     var bs = [];
     
-    for (var i = 0; i < parts.length; i++) {
-        b[i+1] = parts[i].name;
-        bw[i+1] = parts[i].wheel;
-        bg[i+1] = parts[i].gears;
-        bb[i+1] = parts[i].brakes;
-        bp[i+1] = parts[i].pedal;
-        bs[i+1] = parts[i].seat;
+    for (var i = 0; i < bikeParts.length; i++) {
+        b[i+1] = bikeParts[i].name;
+        bw[i+1] = bikeParts[i].wheel;
+        bg[i+1] = bikeParts[i].gears;
+        bb[i+1] = bikeParts[i].brakes;
+        bp[i+1] = bikeParts[i].pedal;
+        bs[i+1] = bikeParts[i].seat;
         document.getElementById.toString("b{$i+1}").innerHTML = b[i+1];
         document.getElementById.toString("bw{$i+1}").innerHTML = bw[i+1];
         document.getElementById.toString("bg{$i+1}").innerHTML = bg[i+1];
