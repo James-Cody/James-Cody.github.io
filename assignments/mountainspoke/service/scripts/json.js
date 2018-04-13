@@ -10,13 +10,14 @@ request.onload = function(){
 }
 
 function populateParts(jsonObj) {
-    var bikeParts = jsonObj['parts'];
-    var b = [];
-    var bw = [];
-    var bg = [];
-    var bb = [];
-    var bp = [];
-    var bs = [];
+    var bikeParts = [0];
+    bikeParts = jsonObj['parts'];
+    var b = [0];
+    var bw = [0];
+    var bg = [0];
+    var bb = [0];
+    var bp = [0];
+    var bs = [0];
     for (var i = 0; i < bikeParts.length; i++) {
         b[i+1] = bikeParts[i].name;
         bw[i+1] = bikeParts[i].wheel;
