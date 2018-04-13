@@ -9,14 +9,6 @@ function clearBoxes() {
     }
 
     
-    var dob = document.getElementById('dob').value;
-    dob = dob.replace(/[^\d]/g, "");
-    if (dob.length == 8) {document.getElementById('divdob').innerHTML = "";}
-    else {
-        document.getElementById('divdob').innerHTML = "Please enter a DOB in the format MM/DD/YYYY";
-        quit++;
-    }
-    
     var fname = document.getElementById('fname').value;
     if (fname.length != 0){document.getElementById('divfname').innerHTML = "";}
     else{
@@ -39,8 +31,16 @@ function clearBoxes() {
     }
     
     var dob = document.getElementById('dob').value;
-    if (dob.length != 0){document.getElementById('divdob').innerHTML = ""}
-    else{    document.getElementById('divdob').innerHTML = "DOB cannot be empty";
+    dob = dob.replace(/[^\d]/g, "");
+    if (dob.length != 0){
+        if (dob.length == 8) {document.getElementById('divdob').innerHTML = "";}
+        else {
+            document.getElementById('divdob').innerHTML = "Please enter a DOB in the format MM/DD/YYYY";
+            quit++;
+        }
+    }
+    else{
+        document.getElementById('divdob').innerHTML = "Invalid DOB - DOB Required";
         quit++;
     }
     
