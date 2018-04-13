@@ -80,6 +80,8 @@ main div.grid div:hover{box-shadow: 5px 5px 10px #6d8088;}
 .rocorn {border-radius: 5px 50px;}
 .opac {opacity: .5;}
 
+main div.grid div div:hover{box-shadow: none;}
+
 .grid div img{width: 100%; margin: 0px; border: 0px; padding: 0px; border-style: none;}
 
 .title{
