@@ -9,13 +9,6 @@ request.onload = function(){
     populateParts(partArray); //see note
 }
 
-/* this code was not working - i kept getting errors with the array not registering as an array 
-*  and as a null or unknown and getting the .length was impossible. I had to completely change my
-*  JSON to not use an array and manually select each element - which is an awefull waste of resources
-*  but because the error was coming from some syntax in my JSON that i could not find, (and we were never taught JSON syntax)
-*  This was the only alternative i had... 
-*/ 
-
 function populateParts(jsonObj) {
     var bikeParts = jsonObj['list'];
     var b = [0];
