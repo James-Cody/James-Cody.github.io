@@ -1,10 +1,9 @@
-var requestURL = 'https://james-cody.github.io/assignments/mountainspoke/data/prices.json';
+var requestURL = 'https://james-cody.github.io/assignments/mountainspoke/json/prices.json';
 var request = new XMLHttpRequest();
 
 request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
-
 request.onload = function() {
   var p = request.response;
   populateParts(p);
