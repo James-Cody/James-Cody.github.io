@@ -1650,6 +1650,8 @@ hentenaar.com#@#.adsbygoogle
 ! https://github.com/reek/anti-adblock-killer/issues/789
 @@||animeheaven.eu/*/showads$script
 ! kissanime.ru
+! https://github.com/reek/anti-adblock-killer/pull/910
+! https://github.com/reek/anti-adblock-killer/issues/789
 @@||kissanime.ru/*/DoDetect2$script
 ! skyrock.com
 skyrock.com##IMG[src*="adblock/pave.png"]
